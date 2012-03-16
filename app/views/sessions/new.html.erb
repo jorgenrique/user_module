@@ -1,0 +1,32 @@
+<section class="round">
+<div class='flash'>  
+  <% flash.each do |key, value| %>
+    <div class="flash <%= key %>"><%= value %></div>
+  <% end %>
+</div>
+
+<h1>Sign in</h1>
+
+<div class='form'>
+<%= form_for(:session, :style=>'height:auto',:url => sessions_path) do |f| %>
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+  </div>
+  <div class="actions">
+	<div class="btn">
+    	<%= f.submit "" %>
+	</div>
+  </div>
+<% end %>
+</div>
+
+<div class="sign">
+<p>New user? <%= link_to "Register now!", signup_path %></p>
+</div>
+
+</section>

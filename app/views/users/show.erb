@@ -1,0 +1,12 @@
+<table class="profile" summary="Profile information">
+  <tr>
+    <td class="main">
+      <h1><%= gravatar_for @user %></h1>
+	  <h1 style='color:#000'><%= @user.name %></h1>
+    </td>
+    <td class="sidebar round"  style='color:#000'>
+      <strong>Name:</strong> <%= @user.name %><br />
+      <strong>URL:</strong>  <%= link_to user_path(@user), @user %>
+    </td>
+  </tr>
+</table>

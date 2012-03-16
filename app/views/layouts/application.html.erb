@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= @title %></title>
+  <%= csrf_meta_tag %>
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->    
+  <%= stylesheet_link_tag 'style' %>
+  <%= stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,600,300' %>
+  <!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
+  <%#= stylesheet_link_tag 'custom', :media => 'screen' %>
+</head>
+<body>
+		
+	<div id='right_bar'></div>
+	
+	<div id='header'>
+		<div id='inner'>
+		<% if signed_in? %>
+			<li><%= link_to "Sign out", signout_path, :method => :delete %></li>
+		<% else %>
+			
+			<div class="text"><span class='normal'>Haven’t joined us yet? </span><span class='red'><%= link_to 'Register here', signup_path %></span></div>
+			<div class='login'>
+			<%= form_for(:session, :url => sessions_path, :class=>'login') do |f| %>
+			  <div class="field">
+			    <%= f.label :email, 'Email' %>
+			  </div>
+			  <div class='inputs'><%= f.text_field :email %></div>
+			  <div class="field">
+			    <%= f.label :password, 'Password' %>
+			  </div>
+			  <div class='inputs'><%= f.password_field :password %></div>
+			  <div class="btn">
+			    <%= f.submit "" %>
+			  </div>
+			<% end %>
+			</div>
+		<% end %>
+				
+			</div>
+		</div>
+	</div>
+	
+	<div id='cont'>
+		  <%= yield %>
+	</div>
+	
+	<div id='footer'></div>
+	
+	
+	<%= debug(params) if Rails.env.development? %>
+
+</body>
+</html>

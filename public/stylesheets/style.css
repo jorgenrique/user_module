@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px; }
+
+h1 {
+  color: #a23e3e !important; }
+
+#bg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1; }
+  #bg img {
+    height: 100%; }
+
+#header {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 0;
+  color: #fff;
+  /*-moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);*/ }
+  #header #inner {
+    width: 900px;
+    margin: auto; }
+    #header #inner .text {
+      text-shadow: #000 1px 1px 6px;
+      float: left;
+      margin-top: 22px; }
+      #header #inner .text .normal {
+        float: left; }
+      #header #inner .text .red {
+        text-decoration: underline;
+        cursor: pointer;
+        text-shadow: none;
+        font-weight: 600;
+        margin-left: 5px;
+        float: left; }
+        #header #inner .text .red a {
+          color: #b22727 !important; }
+    #header #inner .login {
+      float: right;
+      margin-top: 20px; }
+      #header #inner .login .field {
+        float: left;
+        margin-top: 2px;
+        text-shadow: #000 1px 1px 6px; }
+      #header #inner .login .inputs {
+        float: left;
+        margin: 0 10px;
+        -moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3); }
+        #header #inner .login .inputs input {
+          width: 150px;
+          height: 15px;
+          font-size: 10px !important; }
+      #header #inner .login .btn {
+        height: 20px;
+        float: left;
+        -moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3); }
+        #header #inner .login .btn #session_submit {
+          cursor: pointer;
+          color: #fff;
+          font-size: 10px;
+          width: 60px;
+          height: 20px;
+          border: none;
+          background-color: transparent;
+          background-image: url(../images/login_off.png);
+          background-repeat: no-repeat; }
+        #header #inner .login .btn #session_submit:hover {
+          background-image: url(../images/login_on.png);
+          background-repeat: no-repeat; }
+
+#cont {
+  width: 900px;
+  height: auto;
+  margin: auto;
+  margin-top: 20px;
+  color: #fff; }
+  #cont #signup {
+    height: 100%;
+    width: 300px;
+    margin: auto;
+    margin-top: 50px; }
+    #cont #signup #error_explanation {
+      color: #a23e3e !important; }
+    #cont #signup h1 {
+      font-size: 24px;
+      text-align: center;
+      width: 100%;
+      padding: 20px 20px 0;
+      background-color: rgba(0, 0, 0, 0.75); }
+    #cont #signup h2 {
+      font-size: 10px;
+      text-align: center;
+      width: 100%;
+      padding: 5px 20px;
+      background-color: rgba(0, 0, 0, 0.75);
+      color: #ccc; }
+    #cont #signup h3 {
+      float: left;
+      font-size: 10px;
+      text-align: right;
+      width: 100%;
+      padding: 0 20px 20px;
+      background-color: rgba(0, 0, 0, 0.75);
+      color: #aaa; }
+    #cont #signup .form {
+      height: 260px;
+      float: left;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 0 20px; }
+      #cont #signup .form .field {
+        margin-top: 10px;
+        width: 100%;
+        height: auto;
+        float: left; }
+        #cont #signup .form .field label {
+          width: 105px;
+          height: auto;
+          float: left;
+          margin-top: 3px;
+          color: #fff; }
+        #cont #signup .form .field input {
+          margin-left: 5px;
+          width: 180px;
+          height: auto;
+          float: left; }
+      #cont #signup .form .actions {
+        height: 20px;
+        width: 100%;
+        float: left;
+        margin-top: 20px; }
+        #cont #signup .form .actions .btn {
+          height: 20px;
+          width: 60px;
+          margin: auto;
+          -moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+          -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3); }
+          #cont #signup .form .actions .btn #user_submit {
+            cursor: pointer;
+            color: #fff;
+            font-size: 10px;
+            width: 60px;
+            height: 20px;
+            border: none;
+            background-color: transparent;
+            background-image: url(../images/reg_off.png);
+            background-repeat: no-repeat; }
+          #cont #signup .form .actions .btn #user_submit:hover {
+            background-image: url(../images/reg_on.png);
+            background-repeat: no-repeat; }
+  #cont #new_user {
+    color: #b22727 !important; }
+  #cont .info {
+    float: left;
+    margin-top: 120px;
+    width: 460px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.75); }
+  #cont .copy {
+    float: left;
+    width: 400px;
+    margin-top: 300px;
+    font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+    text-shadow: #000 1px 1px 6px;
+    text-align: right; }
+    #cont .copy .big {
+      font-size: 60px; }
+    #cont .copy .small {
+      font-style: italic;
+      font-size: 30px; }
+  #cont .round {
+    height: 100%;
+    width: 300px;
+    margin: auto;
+    margin-top: 100px; }
+    #cont .round .flash {
+      width: 100%;
+      color: #a23e3e !important;
+      text-align: center;
+      margin-bottom: 10px; }
+    #cont .round h1 {
+      font-size: 24px;
+      text-align: center;
+      width: 100%;
+      padding: 20px 20px 0;
+      background-color: rgba(0, 0, 0, 0.75); }
+    #cont .round .form {
+      height: 120px;
+      float: left;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 0 20px; }
+      #cont .round .form .field {
+        margin-top: 10px;
+        width: 100%;
+        height: auto;
+        float: left; }
+        #cont .round .form .field label {
+          width: 90px;
+          height: auto;
+          float: left;
+          margin-top: 3px; }
+        #cont .round .form .field input {
+          width: 200px;
+          height: auto;
+          float: left; }
+      #cont .round .form .actions {
+        height: 20px;
+        width: 100%;
+        float: left;
+        margin-top: 20px; }
+        #cont .round .form .actions .btn {
+          height: 20px;
+          width: 60px;
+          margin: auto;
+          -moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+          -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3); }
+          #cont .round .form .actions .btn #session_submit {
+            cursor: pointer;
+            color: #fff;
+            font-size: 10px;
+            width: 60px;
+            height: 20px;
+            border: none;
+            background-color: transparent;
+            background-image: url(../images/login_off.png);
+            background-repeat: no-repeat; }
+          #cont .round .form .actions .btn #session_submit:hover {
+            background-image: url(../images/login_on.png);
+            background-repeat: no-repeat; }
+    #cont .round .sign {
+      float: left;
+      width: 100%;
+      height: 20px;
+      padding-top: 10px;
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 0 20px 20px; }
+      #cont .round .sign p {
+        text-align: right;
+        height: 20px;
+        width: 100%; }
+        #cont .round .sign p a {
+          color: #b22727 !important; }

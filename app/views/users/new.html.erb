@@ -1,0 +1,45 @@
+<div id='signup'>
+
+<%= render 'shared/error_messages' %>
+
+<h1>Sign up</h1>
+<h2>*All fields must be completed</h2>
+
+<div class='form'>
+<%= form_for(@user) do |f| %>
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :username %>
+    <%= f.text_field :username %>
+  </div>
+  <div class="field">
+    <%= f.label :ref_id, 'Referral Code' %>
+    <%= f.text_field :ref_id %>
+  </div>
+  <div class="field">
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+  </div>
+  <div class="field">
+    <%= f.label :password_confirmation, "Confirm Password" %>
+    <%= f.password_field :password_confirmation %>
+  </div>
+  <div class="actions">
+	<div class='btn'>
+    	<%= f.submit "" %>
+	</div>
+  </div>
+<% end %>
+</div>
+
+<h3>By clicking the register button, you are automatically accepting feteeze.com's terms and conditions.</h3>
+
+
+</div>
